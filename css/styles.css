@@ -1,0 +1,79 @@
+body {
+    background-color: #fff;
+    /* fonts */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #fe8801;
+    padding: 15px;
+}
+
+.headerH2{
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer{
+    font-size: 18px;
+    text-align: center;
+    background-color: #fe8801;
+    padding: 18px;
+    margin: 0px;
+}
+h1 {
+    font-size: 23px;
+}
+ /* div del carrito */
+div {
+    text-align: center;
+    border: 1.7px solid #000;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+/* clase div dentro del carrito */
+.claseCreateE{
+    font-size: 21px;
+}
+/* clase del h1 html */
+.claseH{
+    text-align: center;
+    font-size: 30px;
+}
+/* clase del h2 html */
+.claseH2{
+    text-align: center;
+    font-size: 19px;
+}
+/* clase del btn agregar */
+.productoAgregar{
+    margin: 15px;
+    padding: 9px 20px;
+    border-radius: 15px;
+    border: 1.9px solid #000;
+    background-color: #fe8801;
+    color: black;
+    cursor: pointer;
+}
+/* clase btnComprar */
+.btnComprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* boton comprar productos */
+button{
+    padding: 9px 20px;
+    border-radius: 15px;
+    border: 1.9px solid #000;
+    background-color: #fe8801;
+    color: black;
+    cursor: pointer;
+}
+/* clase img dentro de carrito */
+.img-div{
+    width: 100%;
+}
