@@ -12,7 +12,7 @@ header{
 }
 
 .headerH2{
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -36,7 +36,7 @@ div {
 
 /* clase div dentro del carrito */
 .claseCreateE{
-    font-size: 21px;
+    font-size: 25px;
 }
 /* clase del h1 html */
 .claseH{
@@ -51,7 +51,7 @@ div {
 /* clase del btn agregar */
 .productoAgregar{
     margin: 15px;
-    padding: 9px 20px;
+    padding: 15px 25px;
     border-radius: 15px;
     border: 1.9px solid #000;
     background-color: #fe8801;
@@ -72,6 +72,14 @@ button{
     background-color: #fe8801;
     color: black;
     cursor: pointer;
+}
+
+/* clase parrafo antes de ir a carrito */
+
+.claseP{
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
 }
 /* clase img dentro de carrito */
 .img-div{

@@ -73,7 +73,7 @@ function addToCartButton () {
                 destination: "#",
                 newWindow: true,
                 gravity: "top", // `top` or `bottom`
-                position: "left", // `left`, `center` or `right`
+                position: "center", // `left`, `center` or `right`
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
                   background: "linear-gradient(to right, #fe8801, #96c93d)",
