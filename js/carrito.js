@@ -1,5 +1,5 @@
 let cartStorage = localStorage.getItem("cartProducts")
-cartStorage = JSON.parse(cartStorage)
+cartStorage = JSON.parse(cartStorage) || []
 
 let cartContainer = document.getElementById("cart-section")
 let totalContainer = document.getElementById("total-section")
@@ -12,7 +12,7 @@ function renderCarrito (carItems) {
     carItems.forEach (producto => {
         const cart = document.createElement("div")
         cart.innerHTML =` <h3> ${producto.nombre}</h3>
-                          <p>${producto.precio}</p>`
+                          <p>$${producto.precio}</p>`
         cartContainer.appendChild(cart)
         
         total += producto.precio
@@ -32,26 +32,29 @@ function renderCarrito (carItems) {
             destination: "#",
             newWindow: true,
             close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "center", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top", 
+            position: "center", 
+            stopOnFocus: true, 
             style: {
               background: "linear-gradient(to right, #fe8801, #96c93d)",
             },
-            onClick: function(){} // Callback after click
+            onClick: function(){} 
           }).showToast();
 
-    localStorage.removeItem("cartProducts") // Vaciar el carrito
+          guardarCarritoEnLocalStorage(carItems)
+
+    localStorage.removeItem("cartProducts") 
     cartContainer.innerHTML = ""
     totalContainer.innerHTML = ""
     buttonContainer.innerHTML = ""           
 })
         buttonContainer.appendChild(buyButton)
-
-
 }
 
+function guardarCarritoEnLocalStorage(carrito) {
+    localStorage.setItem('cartProducts', JSON.stringify(carrito));
+}
 
-if (cartStorage) {
+if (cartStorage.length > 0) {
     renderCarrito(cartStorage);
 }

@@ -72,13 +72,13 @@ function addToCartButton () {
                 duration: 1000,
                 destination: "#",
                 newWindow: true,
-                gravity: "top", // `top` or `bottom`
-                position: "center", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
+                gravity: "top", 
+                position: "center", 
+                stopOnFocus: true, 
                 style: {
                   background: "linear-gradient(to right, #fe8801, #96c93d)",
                 },
-                onClick: function(){} // Callback after click
+                onClick: function(){} 
               }).showToast();
         }
     })

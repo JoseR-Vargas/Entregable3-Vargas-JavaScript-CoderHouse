@@ -87,3 +87,31 @@ button{
     margin: 15px;
     font-size: 20px;
 }
+
+@media only screen and ( min-width:500px) and (max-width: 800px){
+    div {
+        text-align: center;
+        border: 1.7px solid #000;
+        border-radius: 15px;
+        margin: 30px 50px;
+    }
+
+    .img-div{
+        width: 70%;
+    }
+
+}
+@media only screen and ( min-width:800px) and (max-width: 1900px){
+   
+    div {
+        text-align: center;
+        border: 1.7px solid #000;
+        border-radius: 15px;
+        margin: 30px 500px;
+
+    }
+
+    .img-div{
+        width: 50%;
+    }
+}
