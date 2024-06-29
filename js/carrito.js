@@ -11,6 +11,7 @@ function renderCarrito (carItems) {
 
     carItems.forEach (producto => {
         const cart = document.createElement("div")
+        cart.classList.add('claseCarrito')
         cart.innerHTML =` <h3> ${producto.nombre}</h3>
                           <p>$${producto.precio}</p>`
         cartContainer.appendChild(cart)

@@ -32,6 +32,8 @@ div {
     border: 1.7px solid #000;
     border-radius: 15px;
     margin: 35px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* clase img dentro de carrito */
@@ -57,7 +59,7 @@ div {
 /* clase del btn agregar */
 .productoAgregar{
     margin: 15px;
-    padding: 20px 30px;
+    padding: 15px 50px;
     border-radius: 15px;
     border: 1.9px solid #000;
     background-color: #fe8801;
@@ -72,7 +74,7 @@ div {
 }
 /* boton comprar productos */
 button{
-    padding: 20px 30px;
+    padding: 20px 100px;
     border-radius: 15px;
     border: 1.9px solid #000;
     background-color: #fe8801;
@@ -88,30 +90,184 @@ button{
     font-size: 20px;
 }
 
-@media only screen and ( min-width:500px) and (max-width: 800px){
+@media only screen and ( min-width:450px) and (max-width: 650px){
     div {
         text-align: center;
         border: 1.7px solid #000;
         border-radius: 15px;
-        margin: 30px 50px;
+        margin: 30px 100px;
+        display: flex;
+        flex-direction: column;
     }
 
     .img-div{
-        width: 70%;
+        width: 100%;
+    }
+
+    button{
+        padding: 20px 100px;
+        margin: 20px;
+        border-radius: 15px;
+        border: 1.9px solid #000;
+        background-color: #fe8801;
+        color: black;
+        cursor: pointer;
+        font-size: 17px;
     }
 
 }
-@media only screen and ( min-width:800px) and (max-width: 1900px){
-   
+
+@media only screen and ( min-width:650px) and (max-width: 800px){
+
     div {
         text-align: center;
         border: 1.7px solid #000;
         border-radius: 15px;
-        margin: 30px 500px;
-
+        margin: 30px 200px;
+        display: flex;
+        flex-direction: column;
     }
 
     .img-div{
-        width: 50%;
+        width: 100%;
+    }
+
+    .claseCarrito{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+    }
+
+    #cart-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    button{
+        padding: 20px 90px;
+        margin: 20px;
+        border-radius: 15px;
+        border: 1.9px solid #000;
+        background-color: #fe8801;
+        color: black;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+
+}
+
+@media only screen and ( min-width:801px) and (max-width: 1108px){
+
+    div {
+        text-align: center;
+        border: 1.7px solid #000;
+        border-radius: 15px;
+        margin: 30px 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-div{
+        width: 100%;
+    }
+
+    .claseCarrito{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+    }
+
+    #cart-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    button{
+        padding: 20px 90px;
+        margin: 20px;
+        border-radius: 15px;
+        border: 1.9px solid #000;
+        background-color: #fe8801;
+        color: black;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and ( min-width:1109px) and (max-width: 1800px){
+   
+    div {
+        text-align: center;
+        border: 1.5px solid #000;
+        border-radius: 15px;
+        margin: 15px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #products-container{
+        display: flex;
+    }
+  
+    .img-div{
+        width: 100%;
+    }
+
+    .headerH2{
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .claseH{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .footer{
+        font-size: 18px;
+        text-align: center;
+        background-color: #fe8801;
+        padding: 25px;
+        margin: 0px;
+    }
+
+    /* pagina carrito */
+
+    #cart-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .claseCarrito{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+    }
+    #total-section{
+        margin: 10px 550px;
+    }
+
+    button{
+        padding: 20px 90px;
+        margin: 20px;
+        border-radius: 15px;
+        border: 1.9px solid #000;
+        background-color: #fe8801;
+        color: black;
+        cursor: pointer;
+        font-size: 17px;
     }
 }

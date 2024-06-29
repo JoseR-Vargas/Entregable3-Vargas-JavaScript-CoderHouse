@@ -7,26 +7,26 @@
     },
     {
         "id": 2,
-        "nombre": "Cebolla Blanca",
-        "precio": 89,
+        "nombre": "Kiwi",
+        "precio": 209,
         "img":"img/image-5.jpg"
     },
     {
         "id": 3,
-        "nombre": "Lechuga Comun",
+        "nombre": "Mango",
         "precio": 109,
         "img":"img/image-4.jpg"
     },
     {
         "id": 4,
         "nombre": "Papa Blanca",
-        "precio": 89,
+        "precio": 99,
         "img":"img/image-3.jpg"
     },
     {
         "id": 5,
         "nombre": "Naranja",
-        "precio": 100,
+        "precio": 99,
         "img":"img/image-2.jpg"
     }
 ]
